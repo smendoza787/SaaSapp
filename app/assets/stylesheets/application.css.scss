@@ -14,13 +14,20 @@
  *= require_self
  */
 
+// Import Bootstrap sprockets
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+// Import Font Awesome sprockets
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+// Background Gradient
 .navbar, .home-callout {
   // Gradient provided by @_ighosh
   background: #134E5E; /* fallback for old browsers */
@@ -32,24 +39,17 @@ h1, h2, h3 {
   border: none;
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
-}
-
+// Nav Styles
+.navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
+// Home Page Styles
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
